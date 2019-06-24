@@ -82,5 +82,11 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 	bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
+source /opt/ros/kinetic/setup.zsh
 source ~/dotfiles/zsh/prompt.sh
-export PATH=$PATH:$HOME/dotfiles/utils
+export PATH=$PATH:$HOME/dotfiles/utils:$HOME
+
+# tmuxinator 
+EDITOR=vim
+
+
