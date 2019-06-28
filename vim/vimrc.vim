@@ -60,7 +60,7 @@
 		vnoremap <leader>con yOconsole.log(<esc>pA);
 
 	" C++
-		inoremap <leader>cout <esc>Istd::cout << <esc>A << std::endl;
+		inoremap <eader>cout <esc>Istd::cout << <esc>A << std::endl;
 		vnoremap <leader>cout yOstd::cout << <esc>pA << std:endl;
 
 	" C
