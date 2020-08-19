@@ -1,3 +1,4 @@
+
 # up
 	function up_widget() {
 		BUFFER="cd .."
@@ -5,6 +6,8 @@
 	}
 	zle -N up_widget
 	bindkey "^k" up_widget
+	bindkey "^h" up_widget
+
 
 # git
 	function git_prepare() {
@@ -17,20 +20,19 @@
 			then
 				BUFFER="git add -A && git commit -v && git push"
 		fi
-				
 		zle accept-line
 	}
 	zle -N git_prepare
 	bindkey "^g" git_prepare
 
-# home
-	function goto_home() { 
-		BUFFER="cd ~/"$BUFFER
-		zle end-of-line
-		zle accept-line
-	}
-	zle -N goto_home
-	bindkey "^h" goto_home
+## home
+#	function goto_home() { 
+#		BUFFER="cd ~/"$BUFFER
+#		zle end-of-line
+#		zle accept-line
+#	}
+#	zle -N goto_home
+#	bindkey "^h" goto_home
 
 # Edit and rerun
 	function edit_and_run() {
@@ -62,3 +64,26 @@
 	}
 	zle -N add_sudo
 	bindkey "^s" add_sudo
+
+
+# dockerit
+	function docker_it() {
+		BUFFER="./docker.sh it"
+		zle accept-line
+	}
+	zle -N docker_it
+	bindkey "^L" docker_it
+
+
+
+# docker stop
+	function docker_stop() {
+		BUFFER="./docker.sh stop"
+		zle accept-line
+	}
+	zle -N docker_stop
+	bindkey "^s" docker_stop
+
+
+
+

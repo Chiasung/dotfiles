@@ -84,7 +84,7 @@ fi
 
 source /opt/ros/kinetic/setup.zsh
 source ~/dotfiles/zsh/prompt.sh
-export PATH=$PATH:$HOME/dotfiles/utils:$HOME
+export PATH=$PATH:$HOME/dotfiles/utils:$HOME:/usr/local/MATLAB/R2019a/bin
 
 # tmuxinator 
 export EDITOR=vim
