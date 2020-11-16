@@ -16,7 +16,7 @@ source ~/dotfiles/zsh/zshrc.sh
 export PATH=/opt/qt/5.7/gcc_64/bin:$PATH
 export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/lib:/usr/lib:/usr/local/lib
 export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/catkin_ws/orb_slam2_ws/ORB-SLAM2_ws/Examples/ROS
-source /opt/ros/kinetic/setup.zsh
+#source /opt/ros/kinetic/setup.zsh
 
 ###########################################
 ##   USING HPC AS MASTER
