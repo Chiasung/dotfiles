@@ -66,24 +66,3 @@
 	bindkey "^s" add_sudo
 
 
-# dockerit
-	function docker_it() {
-		BUFFER="./docker.sh it"
-		zle accept-line
-	}
-	zle -N docker_it
-	bindkey "^L" docker_it
-
-
-
-# docker stop
-	function docker_stop() {
-		BUFFER="./docker.sh stop"
-		zle accept-line
-	}
-	zle -N docker_stop
-	bindkey "^s" docker_stop
-
-
-
-
