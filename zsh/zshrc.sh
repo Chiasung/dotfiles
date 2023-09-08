@@ -1,7 +1,6 @@
 # Vars
-	HISTFILE=~/.zsh_history
-	SAVEHIST=10000
-
+HISTFILE=~/.zsh_history
+#SAVEHIST=10000
 
 # Custom cd
 source ~/dotfiles/zsh/plugins/fixls.zsh
