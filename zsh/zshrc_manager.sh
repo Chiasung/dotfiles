@@ -1,5 +1,8 @@
 time_out () { perl -e 'alarm shift; exec @ARGV' "$@"; }
 
+[[ $TERM == "tramp" ]] && unsetopt zle && PS1='$ ' && return
+
+
 echo "Checking for updates."
 ({cd ~/dotfiles && git fetch -q} &> /dev/null)
  
