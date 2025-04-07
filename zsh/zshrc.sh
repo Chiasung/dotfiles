@@ -39,4 +39,6 @@ fi
 
 source ~/dotfiles/zsh/prompt.sh
 source ~/.emacs.d/plugins/langchain.sh 
+source /opt/ros/noetic/setup.zsh
 
+alias gu="git fetch && git pull && git lfs fetch && git lfs pull && git submodule init && git submodule update --recursive"
